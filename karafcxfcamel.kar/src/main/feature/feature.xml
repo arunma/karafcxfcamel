@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
+          name="${project.artifactId}-${project.version}">
+
+    <!--
+    1) features:chooseurl cxf 2.7.5
+    2) features:install cxf
+    3) features:chooseurl camel 2.10.3
+    4) features:install camel
+    5) features:install camel-cxf
+    -->
+    <feature name="karafcxfcamel" description="Karaf Camel CXF" version="1.0-SNAPSHOT" resolver="(obr)">
+        <details>${project.description}</details>
+        <feature>karafcxf-dependants</feature>
+
+
+        <!--TODO Arun - to derive version from project - ${pom.version} -->
+
+        <bundle>mvn:karafcxfcamel/karafcxfcamel.rest/1.0-SNAPSHOT</bundle>
+        <bundle>mvn:karafcxfcamel/karafcxfcamel.model/1.0-SNAPSHOT</bundle>
+        <bundle>mvn:karafcxfcamel/karafcxfcamel.service.impl/1.0-SNAPSHOT</bundle>
+
+
+    </feature>
+
+
+
+
+
+    <feature name="karafcxf-dependants">
+
+        <bundle>mvn:org.apache.camel/camel-jackson/2.10.3</bundle>
+        <bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.5</bundle>
+        <bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.5</bundle>
+        <bundle>mvn:org.codehaus.jackson/jackson-jaxrs/1.9.5</bundle>
+
+    </feature>
+
+
+
+</features>
