@@ -19,9 +19,8 @@ public class RestServiceImpl implements RestService {
     }
 
     //Do nothing. Camel intercepts and routes the requests
-
     public String sourceResultsFromTwoSources(String queryString) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return null;
     }
 
 

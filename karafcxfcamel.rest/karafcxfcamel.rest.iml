@@ -4,8 +4,8 @@
     <facet type="Osmorc" name="OSGi">
       <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="karafcxfcamel.rest-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="karafcxfcamel.rest" bundleVersion="1.0-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
-          <property key="Export-Package" value="me.rerun.karafcxfcamel.service*;version=1.0-SNAPSHOT" />
-          <property key="Import-Package" value="javax.ws.rs.*;version=&quot;[1.1,3)&quot;,org.apache.cxf.*;version=&quot;[2,4)&quot;,*" />
+          <property key="Export-Package" value="me.rerun.karafcxfcamel.rest*;version=1.0-SNAPSHOT" />
+          <property key="Import-Package" value="*" />
           <property key="Bundle-Name" value="karafcxfcamel.rest" />
           <property key="Include-Resource" value="log4j.properties=$MODULE_DIR$/src/main/resources/log4j.properties,OSGI-INF/blueprint/rest-blueprint.xml=$MODULE_DIR$/src/main/resources/OSGI-INF/blueprint/rest-blueprint.xml" />
         </additionalProperties>

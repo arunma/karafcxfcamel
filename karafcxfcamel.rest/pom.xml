@@ -129,12 +129,8 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Export-Package>me.rerun.karafcxfcamel.service*;version=${project.version}</Export-Package>
-                        <Import-Package>
-                            javax.ws.rs.*;version="[1.1,3)",
-                            org.apache.cxf.*;version="[2,4)",
-                            *
-                        </Import-Package>
+                        <Export-Package>me.rerun.karafcxfcamel.rest*;version=${project.version}</Export-Package>
+                        <Import-Package>*</Import-Package>
                     </instructions>
                 </configuration>
             </plugin>

@@ -3,7 +3,6 @@ package me.rerun.karafcxfcamel.camel.beans;
 import me.rerun.karafcxfcamel.model.AgePhoneResult;
 import me.rerun.karafcxfcamel.model.ConsolidatedSearchResult;
 import me.rerun.karafcxfcamel.model.NameEmailResult;
-import me.rerun.karafcxfcamel.service.impl.AgePhoneServiceImpl;
 import org.apache.camel.Exchange;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 import org.slf4j.Logger;
@@ -11,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class ResultAggregator implements AggregationStrategy {
 
-    private static Logger logger= LoggerFactory.getLogger(AgePhoneServiceImpl.class);
+    private static Logger logger= LoggerFactory.getLogger(ResultAggregator.class);
 
     @Override
     public Exchange aggregate(Exchange oldExchange, Exchange newExchange) {

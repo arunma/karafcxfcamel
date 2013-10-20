@@ -1,7 +1,6 @@
 package me.rerun.karafcxfcamel.rest;
 
 import org.apache.camel.test.blueprint.CamelBlueprintTestSupport;
-import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,11 +8,11 @@ public class TestRunCamel extends CamelBlueprintTestSupport {
 
         private static final Logger logger= LoggerFactory.getLogger(TestRunCamel.class);
 
-        @Test
+        //@Test
         public void testTimer(){
             try {
                 logger.info("hello world");
-                Thread.sleep(10);
+                Thread.sleep(10000);
 
 
             } catch (InterruptedException e) {
