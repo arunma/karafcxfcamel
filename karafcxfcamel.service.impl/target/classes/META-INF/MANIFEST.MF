@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1382274042443
+Build-Jdk: 1.6.0_51
+Built-By: Gabriel
+Bundle-ManifestVersion: 2
+Bundle-Name: karafcxfcamel.service.impl
+Bundle-SymbolicName: karafcxfcamel.service.impl
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: me.rerun.karafcxfcamel.service.impl;uses:="me.rerun.kara
+ fcxfcamel.service.base,me.rerun.karafcxfcamel.model,org.slf4j";version=
+ "1.0.0.SNAPSHOT",me.rerun.karafcxfcamel.service.base;uses:="me.rerun.ka
+ rafcxfcamel.model";version="1.0.0.SNAPSHOT"
+Export-Service: me.rerun.karafcxfcamel.service.base.AgePhoneService,me.r
+ erun.karafcxfcamel.service.base.NameEmailService
+Import-Package: me.rerun.karafcxfcamel.model;version="[1.0,2)",org.osgi.
+ service.blueprint;version="[1.0.0,2.0.0)",org.slf4j;version="[1.7,2)"
+Tool: Bnd-1.50.0
